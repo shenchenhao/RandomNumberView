@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC41322418A9BF7C002FF467 /* RootController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC41322318A9BF7C002FF467 /* RootController.m */; };
 		AC544BB318962D93001A9373 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC544BB218962D93001A9373 /* Foundation.framework */; };
 		AC544BB518962D93001A9373 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC544BB418962D93001A9373 /* CoreGraphics.framework */; };
 		AC544BB718962D93001A9373 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC544BB618962D93001A9373 /* UIKit.framework */; };
@@ -19,6 +20,8 @@
 		AC544BCE18962D94001A9373 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC544BB618962D93001A9373 /* UIKit.framework */; };
 		AC544BD618962D94001A9373 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AC544BD418962D94001A9373 /* InfoPlist.strings */; };
 		AC544BD818962D94001A9373 /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = AC544BD718962D94001A9373 /* ____Tests.m */; };
+		AC544BE618964332001A9373 /* SCHRandomNumberView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC544BE518964332001A9373 /* SCHRandomNumberView.m */; };
+		ACC4BD57189753D400451489 /* UIButton+SCHRandomNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC4BD56189753D400451489 /* UIButton+SCHRandomNumber.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC41322118A9BF11002FF467 /* prefix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = prefix.h; sourceTree = "<group>"; };
+		AC41322218A9BF7C002FF467 /* RootController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootController.h; sourceTree = "<group>"; };
+		AC41322318A9BF7C002FF467 /* RootController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootController.m; sourceTree = "<group>"; };
 		AC544BAF18962D93001A9373 /* 随机彩票.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "随机彩票.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC544BB218962D93001A9373 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AC544BB418962D93001A9373 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,6 +54,10 @@
 		AC544BD318962D94001A9373 /* 随机彩票Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "随机彩票Tests-Info.plist"; sourceTree = "<group>"; };
 		AC544BD518962D94001A9373 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AC544BD718962D94001A9373 /* ____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____Tests.m"; sourceTree = "<group>"; };
+		AC544BE418964332001A9373 /* SCHRandomNumberView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCHRandomNumberView.h; sourceTree = "<group>"; };
+		AC544BE518964332001A9373 /* SCHRandomNumberView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCHRandomNumberView.m; sourceTree = "<group>"; };
+		ACC4BD55189753D400451489 /* UIButton+SCHRandomNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+SCHRandomNumber.h"; sourceTree = "<group>"; };
+		ACC4BD56189753D400451489 /* UIButton+SCHRandomNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+SCHRandomNumber.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,10 +117,17 @@
 		AC544BB818962D94001A9373 /* 随机彩票 */ = {
 			isa = PBXGroup;
 			children = (
+				ACC4BD55189753D400451489 /* UIButton+SCHRandomNumber.h */,
+				ACC4BD56189753D400451489 /* UIButton+SCHRandomNumber.m */,
+				AC544BE418964332001A9373 /* SCHRandomNumberView.h */,
+				AC544BE518964332001A9373 /* SCHRandomNumberView.m */,
 				AC544BC118962D94001A9373 /* AppDelegate.h */,
 				AC544BC218962D94001A9373 /* AppDelegate.m */,
+				AC41322118A9BF11002FF467 /* prefix.h */,
 				AC544BC418962D94001A9373 /* Images.xcassets */,
 				AC544BB918962D94001A9373 /* Supporting Files */,
+				AC41322218A9BF7C002FF467 /* RootController.h */,
+				AC41322318A9BF7C002FF467 /* RootController.m */,
 			);
 			path = "随机彩票";
 			sourceTree = "<group>";
@@ -239,8 +256,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC544BE618964332001A9373 /* SCHRandomNumberView.m in Sources */,
 				AC544BC318962D94001A9373 /* AppDelegate.m in Sources */,
 				AC544BBF18962D94001A9373 /* main.m in Sources */,
+				ACC4BD57189753D400451489 /* UIButton+SCHRandomNumber.m in Sources */,
+				AC41322418A9BF7C002FF467 /* RootController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,7 +310,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -299,7 +319,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Hangzhou Ebaimi Electronic Commerce Limited Company";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Hangzhou Ebaimi Electronic Commerce Limited Company";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -329,7 +350,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -338,7 +359,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Hangzhou Ebaimi Electronic Commerce Limited Company";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Hangzhou Ebaimi Electronic Commerce Limited Company";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -441,6 +463,7 @@
 				AC544BDD18962D94001A9373 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AC544BDE18962D94001A9373 /* Build configuration list for PBXNativeTarget "随机彩票Tests" */ = {
 			isa = XCConfigurationList;
@@ -449,6 +472,7 @@
 				AC544BE018962D94001A9373 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

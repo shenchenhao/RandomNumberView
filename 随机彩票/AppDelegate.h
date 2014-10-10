@@ -8,8 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@class RootController;
 
-@property (strong, nonatomic) UIWindow *window;
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
+{
+    RootController *_root_controller;
+}
+
+@property (nonatomic, retain) RootController *root_controller;
+@property (strong, nonatomic) UIWindow       *window;
 
 @end
