@@ -169,7 +169,7 @@
 
 - (void)randomNumberView:(SCHRandomNumberView *)sch_random_number_view didSelectedCell:(UIButton *)button atIndex:(int)index
 {
-    NSLog(@"---- %d",index);
+    NSLog(@"--- %d",index);
 }
 
 #pragma mark -
